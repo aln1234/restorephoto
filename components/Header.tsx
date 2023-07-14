@@ -1,19 +1,21 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
-function Header() {
+export default function Header() {
   return (
-    <header className="flex justify-between w-full mt-0  pb-0 sm:px-2 px-2">
-      <Link href="/" className="flex space-x-2 mx-4 my-2">
-        <img
-          alt="header text"
-          src="/logo.png"
-          className="w-[110px] h-[105px]"
-        />
-      </Link>
+    <header className="flex justify-between items-center w-full max-w-6xl mx-auto py-4">
+      <div className="">
+        <Link href="/">
+          {" "}
+          <img src="/images/logo.png" className="w-[150px] object-contain" />
+        </Link>
+      </div>
+      <div>
+        <Link href="https://github.com/aln1234">
+          <FaGithub className="text-4xl text-blue-600 cursor-pointer hover:text-red-500" />
+        </Link>
+      </div>
     </header>
   );
 }
-
-export default Header;
