@@ -54,7 +54,7 @@ let startResponse = await fetch("https://api.replicate.com/v1/predictions", {
   },
   body: JSON.stringify({
     version:
-    "d0ee3d708c9b911f122a4ad90046c5d26a0293b99476d697f6bb7f2e251ce2d4",
+    "42fed1c4974146d4d2414e2be2c5277c7fcf05fcc3a73abf41610695738c1d7b",
     input: {  image: imageUrl},
   }),
 });
